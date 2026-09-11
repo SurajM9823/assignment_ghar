@@ -14,12 +14,12 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=1.2.0" rel="stylesheet">
 </head>
 
 <body>
@@ -43,24 +43,24 @@
 
 
         <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="img/icon-deal.png" alt="AssignmentGhar Logo" style="width: 30px; height: 30px;">
+        <div class="container-fluid nav-bar bg-white">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light px-3 px-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center me-4">
+                    <div class="brand-icon-wrapper me-2">
+                        <img class="img-fluid" src="img/icon-deal.png" alt="AssignmentGhar Logo" style="width: 20px; height: 20px;">
                     </div>
-                    <h1 class="m-0 text-primary">AssignmentGhar</h1>
+                    <h1 class="m-0 text-primary brand-title">AssignmentGhar</h1>
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
+                    <div class="navbar-nav ms-auto py-2 py-lg-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded-0 m-0">
+                            <div class="dropdown-menu m-0">
                                 <a href="property-list.html" class="dropdown-item">Assignment Help</a>
                                 <a href="property-type.html" class="dropdown-item">Essay Writing</a>
                                 <a href="property-agent.html" class="dropdown-item">Research Paper</a>
@@ -69,14 +69,19 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
-                            <div class="dropdown-menu rounded-0 m-0">
+                            <div class="dropdown-menu m-0">
                                 <a href="testimonial.html" class="dropdown-item">Testimonials</a>
                                 <a href="404.html" class="dropdown-item">404 Error</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Get Help Now</a>
+                    <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                        <a href="contact.html" class="nav-cta-btn">
+                            <span>Get Help Now</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -85,19 +90,50 @@
 
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
-            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-                <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Get Expert Assignment Help From Top Academic Writers</h1>
-                    <p class="animated fadeIn mb-4 pb-2">AssignmentGhar connects students with professional academic writers for essays, research papers, programming assignments, dissertations, and more. Achieve better grades with our expert help.</p>
-                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
-                </div>
-                <div class="col-md-6 animated fadeIn">
-                    <div class="owl-carousel header-carousel">
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+            <div class="container-xxl py-5 px-4 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <div class="hero-badge mb-3 animated fadeIn">
+                            <i class="bi bi-shield-check me-2"></i>
+                            <span>Trusted Academic Assistance Platform</span>
                         </div>
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                        <h1 class="hero-title animated fadeIn mb-4">
+                            Get Expert Assignment Help From <span class="text-highlight">Top Academic Writers</span>
+                        </h1>
+                        <p class="hero-text animated fadeIn mb-4 pb-1">
+                            AssignmentGhar connects students with professional academic writers for essays, research papers, programming assignments, dissertations, and more. Achieve better grades with our expert help.
+                        </p>
+                        <div class="hero-cta-group d-flex flex-wrap align-items-center gap-3 animated fadeIn mb-4">
+                            <a href="contact.html" class="hero-cta-btn">
+                                <span>Get Started</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="hero-trust-bar animated fadeIn pt-2">
+                            <div class="trust-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>100% Plagiarism-Free</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>24/7 Support</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>On-Time Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 animated fadeIn">
+                        <div class="hero-visual-card">
+                            <div class="owl-carousel header-carousel">
+                                <div class="owl-carousel-item">
+                                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Academic Writing Assistance">
+                                </div>
+                                <div class="owl-carousel-item">
+                                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Expert Assignment Help">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,35 +143,54 @@
 
 
         <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Search Assignments">
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Subject</option>
-                                    <option value="1">Subject 1</option>
-                                    <option value="2">Subject 2</option>
-                                    <option value="3">Subject 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Deadline</option>
-                                    <option value="1">Deadline 1</option>
-                                    <option value="2">Deadline 2</option>
-                                    <option value="3">Deadline 3</option>
-                                </select>
+        <div class="container-fluid hero-search-section mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container-xxl px-4 px-lg-5">
+                <div class="hero-search-card">
+                    <form class="row g-0 align-items-center">
+                        <div class="col-lg-3 col-md-6 search-field-col">
+                            <div class="search-field-wrapper">
+                                <i class="bi bi-search search-field-icon"></i>
+                                <div class="search-field-content">
+                                    <label class="search-field-label">Search</label>
+                                    <input type="text" class="form-control search-input" placeholder="Search Assignments...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3">Find Help</button>
-                    </div>
+                        <div class="col-lg-3 col-md-6 search-field-col">
+                            <div class="search-field-wrapper">
+                                <i class="bi bi-journal-bookmark-fill search-field-icon"></i>
+                                <div class="search-field-content">
+                                    <label class="search-field-label">Subject</label>
+                                    <select class="form-select search-select">
+                                        <option selected>Subject</option>
+                                        <option value="1">Subject 1</option>
+                                        <option value="2">Subject 2</option>
+                                        <option value="3">Subject 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 search-field-col">
+                            <div class="search-field-wrapper">
+                                <i class="bi bi-clock-history search-field-icon"></i>
+                                <div class="search-field-content">
+                                    <label class="search-field-label">Deadline</label>
+                                    <select class="form-select search-select">
+                                        <option selected>Deadline</option>
+                                        <option value="1">Deadline 1</option>
+                                        <option value="2">Deadline 2</option>
+                                        <option value="3">Deadline 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 search-btn-col">
+                            <button type="submit" class="search-submit-btn">
+                                <span>Find Help</span>
+                                <i class="bi bi-arrow-right-short fs-5"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -143,99 +198,87 @@
 
 
         <!-- Category Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5 assignment-types-section">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Assignment Types</h1>
-                    <p>We provide expert academic assistance across all subjects and assignment formats.</p>
+                <div class="text-center mx-auto mb-4 pb-2 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <div class="section-badge mb-2">
+                        <i class="bi bi-grid-fill me-1"></i>
+                        <span>EXPLORE CATEGORIES</span>
+                    </div>
+                    <h2 class="section-title mb-2">Assignment Types</h2>
+                    <p class="section-subtitle">We provide expert academic assistance across all subjects and assignment formats.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-apartment.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Essay Writing</h6>
-                                <span>500+ Assignments</span>
+                <div class="row g-3 g-md-4">
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-pencil-square"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Essay Writing</h6>
+                            <span class="cat-count">500+ Assignments</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-villa.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Research Paper</h6>
-                                <span>300+ Papers</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-journal-text"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Research Paper</h6>
+                            <span class="cat-count">300+ Papers</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-house.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Programming Help</h6>
-                                <span>400+ Projects</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-code-slash"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Programming Help</h6>
+                            <span class="cat-count">400+ Projects</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-housing.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Dissertation</h6>
-                                <span>200+ Works</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-mortarboard-fill"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Dissertation</h6>
+                            <span class="cat-count">200+ Works</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-building.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Homework Help</h6>
-                                <span>600+ Tasks</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-journal-bookmark"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Homework Help</h6>
+                            <span class="cat-count">600+ Tasks</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-neighborhood.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Case Study</h6>
-                                <span>250+ Studies</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-bar-chart-line"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Case Study</h6>
+                            <span class="cat-count">250+ Studies</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-condominium.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Thesis Writing</h6>
-                                <span>150+ Papers</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-award"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Thesis Writing</h6>
+                            <span class="cat-count">150+ Papers</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-luxury.png" alt="AssignmentGhar Logo">
-                                </div>
-                                <h6>Online Tutoring</h6>
-                                <span>350+ Sessions</span>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="cat-card d-flex flex-column align-items-center text-center text-decoration-none" href="property-list.html">
+                            <div class="cat-icon-box mb-3">
+                                <i class="cat-icon bi bi-laptop"></i>
                             </div>
+                            <h6 class="cat-title mb-1">Online Tutoring</h6>
+                            <span class="cat-count">350+ Sessions</span>
                         </a>
                     </div>
                 </div>
@@ -245,22 +288,74 @@
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5 about-section">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                            <img class="img-fluid w-100" src="img/about.jpg">
+                        <div class="about-visual-card position-relative">
+                            <img class="img-fluid w-100" src="img/about.jpg" alt="#1 Trusted Online Assignment Help Platform">
+                            <div class="about-experience-badge d-flex align-items-center gap-3">
+                                <div class="badge-icon">
+                                    <i class="bi bi-award-fill"></i>
+                                </div>
+                                <div class="badge-text">
+                                    <span class="badge-number">10+ Years</span>
+                                    <span class="badge-label">Academic Excellence</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">#1 Trusted Online Assignment Help Platform</h1>
-                        <p class="mb-4">AssignmentGhar is the leading academic assistance platform helping students worldwide. Our team of expert writers and tutors delivers high-quality, plagiarism-free assignments tailored to your requirements. With 10+ years of experience, we have helped thousands of students achieve academic success.</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Expert academic writers with advanced degrees</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>100% plagiarism-free assignments with Turnitin reports</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>On-time delivery with 24/7 customer support</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Affordable pricing with unlimited revisions</p>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                        <div class="section-badge mb-2">
+                            <i class="bi bi-shield-check me-1"></i>
+                            <span>WHY CHOOSE ASSIGNMENTGHAR</span>
+                        </div>
+                        <h2 class="about-title mb-3">#1 Trusted Online Assignment Help Platform</h2>
+                        <p class="about-text mb-4">
+                            AssignmentGhar is the leading academic assistance platform helping students worldwide. Our team of expert writers and tutors delivers high-quality, plagiarism-free assignments tailored to your exact requirements. With 10+ years of experience, we have helped thousands of students achieve academic success.
+                        </p>
+                        <div class="trust-list mb-4">
+                            <div class="trust-list-item d-flex align-items-start gap-3 mb-3">
+                                <div class="trust-icon-box">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="trust-item-title mb-0">Expert Academic Writers</h6>
+                                    <p class="trust-item-desc mb-0">Qualified professionals with Master's & PhD degrees across all subjects.</p>
+                                </div>
+                            </div>
+                            <div class="trust-list-item d-flex align-items-start gap-3 mb-3">
+                                <div class="trust-icon-box">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="trust-item-title mb-0">100% Plagiarism-Free</h6>
+                                    <p class="trust-item-desc mb-0">Original work written from scratch with Turnitin quality assurance.</p>
+                                </div>
+                            </div>
+                            <div class="trust-list-item d-flex align-items-start gap-3 mb-3">
+                                <div class="trust-icon-box">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="trust-item-title mb-0">On-Time Delivery & 24/7 Support</h6>
+                                    <p class="trust-item-desc mb-0">Guaranteed deadline compliance with round-the-clock student assistance.</p>
+                                </div>
+                            </div>
+                            <div class="trust-list-item d-flex align-items-start gap-3 mb-3">
+                                <div class="trust-icon-box">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="trust-item-title mb-0">Affordable Rates & Free Revisions</h6>
+                                    <p class="trust-item-desc mb-0">Student-friendly pricing with unlimited revisions for peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="about-cta-btn" href="about.html">
+                            <span>Read More</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -268,416 +363,310 @@
         <!-- About End -->
 
 
-        <!-- Property List Start -->
-        <div class="container-xxl py-5">
+        <!-- Services Start -->
+        <div class="container-xxl py-5 services-section">
             <div class="container">
-                <div class="row g-0 gx-5 align-items-end">
+                <div class="row g-4 align-items-end mb-4">
                     <div class="col-lg-6">
-                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                            <h1 class="mb-3">Our Services</h1>
-                            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit diam justo sed rebum.</p>
+                        <div class="section-badge mb-2">
+                            <i class="bi bi-briefcase-fill me-1"></i>
+                            <span>EXPLORE OUR SERVICES</span>
                         </div>
+                        <h2 class="section-title mb-2">Our Academic Services</h2>
+                        <p class="section-subtitle mb-0">Professional assignment help, research paper writing, and tutoring tailored to your university standards.</p>
                     </div>
-                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
-                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
-                            <li class="nav-item me-2">
-                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Popular</a>
+                    <div class="col-lg-6 text-start text-lg-end">
+                        <ul class="nav nav-pills service-pills d-inline-flex justify-content-lg-end gap-2">
+                            <li class="nav-item">
+                                <a class="service-pill-btn active" data-bs-toggle="pill" href="#tab-1">All Services</a>
                             </li>
-                            <li class="nav-item me-2">
-                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">Essay Writing</a>
+                            <li class="nav-item">
+                                <a class="service-pill-btn" data-bs-toggle="pill" href="#tab-2">Essay Writing</a>
                             </li>
-                            <li class="nav-item me-0">
-                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">Programming</a>
+                            <li class="nav-item">
+                                <a class="service-pill-btn" data-bs-toggle="pill" href="#tab-3">Programming</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="tab-content">
+                    <!-- Tab 1: All Services -->
                     <div id="tab-1" class="tab-pane fade show p-0 active">
                         <div class="row g-4">
+                            <!-- Service 1 -->
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Popular Service</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Subjects</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-1.jpg" alt="Professional Essay Writing Service">
+                                        <span class="service-badge-tag">Popular</span>
+                                        <span class="service-subject-pill">All Subjects</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">5000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Professional Essay Writing Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Subjects</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.9 (5,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-clock-history me-1"></i>Fast 24h Delivery</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Professional Essay Writing Service</h5>
+                                        <p class="service-card-desc mb-3">Custom essays, argumentative papers, and admissions essays crafted by certified academic experts.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>100% Plagiarism-Free</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PhD Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>100% Original</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>A+ Grade</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
+
+                            <!-- Service 2 -->
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-2.jpg" alt="Research Paper & Thesis Assistance">
+                                        <span class="service-badge-tag">Best Value</span>
+                                        <span class="service-subject-pill">STEM & Humanities</span>
+                                    </div>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.9 (3,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-shield-check me-1"></i>Turnitin Report</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Research Paper & Thesis Assistance</h5>
+                                        <p class="service-card-desc mb-3">In-depth research papers, literature reviews, and citations (APA, MLA, Harvard, Chicago).</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>Free Unlimited Revisions</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Service 3 -->
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Best Value</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">STEM & Humanities</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-3.jpg" alt="Programming & Coding Assignment Help">
+                                        <span class="service-badge-tag">Top Rated</span>
+                                        <span class="service-subject-pill">Computer Science</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">3000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Research Paper Help</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>STEM & Humanities</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>5.0 (4,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-code-square me-1"></i>Tested & Verified</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Programming & Coding Assignment Help</h5>
+                                        <p class="service-card-desc mb-3">Expert solutions in Python, Java, C++, Web Development, Data Science, and SQL database.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>100% Executable Code</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Research Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Turnitin Report</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>Unlimited Revisions</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Top Rated</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Programming</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">4000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Programming Assignment Help</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Programming</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Code Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Plagiarism Free</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>24/7 Support</small>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <!-- Service 4 -->
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Expert Help</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Domains</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-4.jpg" alt="Dissertation & Master's Thesis Service">
+                                        <span class="service-badge-tag">Expert Help</span>
+                                        <span class="service-subject-pill">Master's & PhD</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">2000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Dissertation Writing Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Domains</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.9 (2,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-journal-text me-1"></i>Chapter-by-Chapter</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Dissertation & Master's Thesis Service</h5>
+                                        <p class="service-card-desc mb-3">Complete dissertation assistance from research proposal to methodology, analysis, and conclusion.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>PhD Subject Specialist</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PhD Writers</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Quality Assured</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>On-Time Delivery</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
+
+                            <!-- Service 5 -->
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-5.jpg" alt="Urgent Homework & Coursework Help">
+                                        <span class="service-badge-tag">Student Choice</span>
+                                        <span class="service-subject-pill">College & University</span>
+                                    </div>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.8 (6,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-lightning-charge-fill text-warning me-1"></i>Urgent 6h Delivery</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Urgent Homework & Coursework Help</h5>
+                                        <p class="service-card-desc mb-3">Fast, accurate solutions for daily coursework, lab reports, quizzes, and problem sets.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>Guaranteed Top Grades</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Service 6 -->
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Student Choice</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">School & College</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-6.jpg" alt="Academic Case Study Analysis">
+                                        <span class="service-badge-tag">Premium</span>
+                                        <span class="service-subject-pill">Business & Management</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">6000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Homework Help Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>School & College</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.9 (2,500+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-graph-up me-1"></i>SWOT & Financial Models</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Academic Case Study Analysis</h5>
+                                        <p class="service-card-desc mb-3">Analytical case study reports, strategic business analyses, and executive summaries.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>Industry Specialists</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Quick Turnaround</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Affordable Prices</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>24/7 Available</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Premium</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Business & Management</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">2500+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Case Study Analysis</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Business & Management</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Industry Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Custom Solutions</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>Top Grades</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                                <a class="btn btn-primary py-3 px-5" href="">Browse More Services</a>
+
+                            <div class="col-12 text-center mt-4 pt-2 wow fadeInUp" data-wow-delay="0.1s">
+                                <a href="property-list.html" class="services-browse-btn">
+                                    <span>Browse All Services</span>
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Tab 2: Essay Writing -->
                     <div id="tab-2" class="tab-pane fade show p-0">
                         <div class="row g-4">
                             <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Popular Service</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Subjects</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-1.jpg" alt="Professional Essay Writing Service">
+                                        <span class="service-badge-tag">Popular</span>
+                                        <span class="service-subject-pill">All Subjects</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">5000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Professional Essay Writing Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Subjects</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.9 (5,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-clock-history me-1"></i>Fast 24h Delivery</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Professional Essay Writing Service</h5>
+                                        <p class="service-card-desc mb-3">Custom essays, argumentative papers, and admissions essays crafted by certified academic experts.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>100% Plagiarism-Free</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PhD Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>100% Original</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>A+ Grade</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Best Value</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">STEM & Humanities</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-2.jpg" alt="Research Paper & Thesis Assistance">
+                                        <span class="service-badge-tag">Best Value</span>
+                                        <span class="service-subject-pill">STEM & Humanities</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">3000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Research Paper Help</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>STEM & Humanities</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>4.9 (3,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-shield-check me-1"></i>Turnitin Report</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Research Paper & Thesis Assistance</h5>
+                                        <p class="service-card-desc mb-3">In-depth research papers, literature reviews, and citations (APA, MLA, Harvard, Chicago).</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>Free Unlimited Revisions</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Research Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Turnitin Report</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>Unlimited Revisions</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Top Rated</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Programming</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">4000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Programming Assignment Help</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Programming</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Code Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Plagiarism Free</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>24/7 Support</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Expert Help</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Domains</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">2000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Dissertation Writing Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Domains</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PhD Writers</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Quality Assured</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>On-Time Delivery</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Student Choice</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">School & College</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">6000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Homework Help Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>School & College</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Quick Turnaround</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Affordable Prices</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>24/7 Available</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Premium</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Business & Management</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">2500+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Case Study Analysis</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Business & Management</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Industry Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Custom Solutions</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>Top Grades</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <a class="btn btn-primary py-3 px-5" href="">Browse More Services</a>
+                            <div class="col-12 text-center mt-4 pt-2">
+                                <a href="property-list.html" class="services-browse-btn">
+                                    <span>Browse All Services</span>
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Tab 3: Programming -->
                     <div id="tab-3" class="tab-pane fade show p-0">
                         <div class="row g-4">
                             <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Popular Service</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Subjects</div>
+                                <a class="service-card d-block text-decoration-none" href="contact.html">
+                                    <div class="service-img-wrapper position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="img/property-3.jpg" alt="Programming & Coding Assignment Help">
+                                        <span class="service-badge-tag">Top Rated</span>
+                                        <span class="service-subject-pill">Computer Science</span>
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">5000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Professional Essay Writing Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Subjects</p>
+                                    <div class="service-card-body p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <span class="service-orders"><i class="bi bi-star-fill text-warning me-1"></i>5.0 (4,000+ Orders)</span>
+                                            <span class="service-turnaround"><i class="bi bi-code-square me-1"></i>Tested & Verified</span>
+                                        </div>
+                                        <h5 class="service-card-title mb-2">Programming & Coding Assignment Help</h5>
+                                        <p class="service-card-desc mb-3">Expert solutions in Python, Java, C++, Web Development, Data Science, and SQL database.</p>
+                                        <div class="service-card-footer d-flex align-items-center justify-content-between pt-3 border-top">
+                                            <span class="service-feature-text"><i class="bi bi-check2-circle text-primary me-1"></i>100% Executable Code</span>
+                                            <span class="service-cta-link">Order Now <i class="bi bi-arrow-right ms-1"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PhD Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>100% Original</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>A+ Grade</small>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Best Value</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">STEM & Humanities</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">3000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Research Paper Help</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>STEM & Humanities</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Research Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Turnitin Report</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>Unlimited Revisions</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Top Rated</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Programming</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">4000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Programming Assignment Help</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Programming</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Code Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Plagiarism Free</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>24/7 Support</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Expert Help</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">All Domains</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">2000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Dissertation Writing Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>All Domains</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PhD Writers</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Quality Assured</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>On-Time Delivery</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Student Choice</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">School & College</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">6000+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Homework Help Service</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>School & College</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Quick Turnaround</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Affordable Prices</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>24/7 Available</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Premium</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Business & Management</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">2500+ Orders</h5>
-                                        <a class="d-block h5 mb-2" href="">Case Study Analysis</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Business & Management</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>Industry Experts</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>Custom Solutions</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>Top Grades</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <a class="btn btn-primary py-3 px-5" href="">Browse More Services</a>
+                            <div class="col-12 text-center mt-4 pt-2">
+                                <a href="property-list.html" class="services-browse-btn">
+                                    <span>Browse All Services</span>
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Property List End -->
+        <!-- Services End -->
 
 
         <!-- Call to Action Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="bg-light rounded p-3">
-                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="mb-4">
-                                    <h1 class="mb-3">Need Assignment Help?</h1>
-                                    <p>Get in touch with our academic experts today. We provide customized assignment solutions that meet your university requirements and deadlines.</p>
+                <div class="cta-card">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="cta-img-container">
+                                <img class="img-fluid" src="img/call-to-action.jpg" alt="Need Assignment Help">
+                                <div class="cta-floating-chip">
+                                    <span class="pulse-dot"></span>
+                                    <span>24/7 Academic Support</span>
                                 </div>
-                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Call Us Now</a>
-                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Book a Tutor</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="ps-lg-3">
+                                <div class="cta-badge mb-2">
+                                    <i class="bi bi-headset me-1"></i>
+                                    <span>EXPERT ACADEMIC ASSISTANCE</span>
+                                </div>
+                                <h2 class="cta-title mb-3">Need Assignment Help?</h2>
+                                <p class="cta-desc mb-3">Get in touch with our academic experts today. We provide customized assignment solutions that meet your university requirements and deadlines.</p>
+                                <div class="cta-features d-flex flex-wrap gap-3 mb-4">
+                                    <span class="cta-feature-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>100% Confidential</span>
+                                    <span class="cta-feature-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>On-Time Delivery</span>
+                                    <span class="cta-feature-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>Plagiarism-Free</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-3 align-items-center">
+                                    <a href="contact.html" class="cta-btn-primary">
+                                        <i class="bi bi-telephone-fill me-2"></i>Call Us Now
+                                    </a>
+                                    <a href="contact.html" class="cta-btn-secondary">
+                                        <i class="bi bi-person-video3 me-2"></i>Book a Tutor
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -910,7 +899,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=1.2.0"></script>
 </body>
 
 </html>

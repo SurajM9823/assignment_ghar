@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -43,40 +43,45 @@
 
 
         <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="img/icon-deal.png" alt="AssignmentGhar Logo" style="width: 30px; height: 30px;">
+        <div class="container-fluid nav-bar bg-white">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light px-3 px-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center me-4">
+                    <div class="brand-icon-wrapper me-2">
+                        <img class="img-fluid" src="img/icon-deal.png" alt="AssignmentGhar Logo" style="width: 20px; height: 20px;">
                     </div>
-                    <h1 class="m-0 text-primary">AssignmentGhar</h1>
+                    <h1 class="m-0 text-primary brand-title">AssignmentGhar</h1>
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
+                    <div class="navbar-nav ms-auto py-2 py-lg-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded-0 m-0">
+                            <div class="dropdown-menu m-0">
                                 <a href="property-list.html" class="dropdown-item">Assignment Help</a>
                                 <a href="property-type.html" class="dropdown-item">Essay Writing</a>
                                 <a href="property-agent.html" class="dropdown-item">Research Paper</a>
-                                <a href="property-list.html" class="dropdown-item">Programming Help</a>
+                                <a href="property-agent.html" class="dropdown-item">Programming Help</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
-                            <div class="dropdown-menu rounded-0 m-0">
+                            <div class="dropdown-menu m-0">
                                 <a href="testimonial.html" class="dropdown-item">Testimonials</a>
                                 <a href="404.html" class="dropdown-item">404 Error</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Get Help Now</a>
+                    <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0">
+                        <a href="contact.html" class="nav-cta-btn">
+                            <span>Get Help Now</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -104,35 +109,54 @@
 
 
         <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Search Assignments">
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Subject</option>
-                                    <option value="1">Subject 1</option>
-                                    <option value="2">Subject 2</option>
-                                    <option value="3">Subject 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Deadline</option>
-                                    <option value="1">Deadline 1</option>
-                                    <option value="2">Deadline 2</option>
-                                    <option value="3">Deadline 3</option>
-                                </select>
+        <div class="container-fluid hero-search-section mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container-xxl px-4 px-lg-5">
+                <div class="hero-search-card">
+                    <form class="row g-0 align-items-center">
+                        <div class="col-lg-3 col-md-6 search-field-col">
+                            <div class="search-field-wrapper">
+                                <i class="bi bi-search search-field-icon"></i>
+                                <div class="search-field-content">
+                                    <label class="search-field-label">Search</label>
+                                    <input type="text" class="form-control search-input" placeholder="Search Assignments...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3">Find Help</button>
-                    </div>
+                        <div class="col-lg-3 col-md-6 search-field-col">
+                            <div class="search-field-wrapper">
+                                <i class="bi bi-journal-bookmark-fill search-field-icon"></i>
+                                <div class="search-field-content">
+                                    <label class="search-field-label">Subject</label>
+                                    <select class="form-select search-select">
+                                        <option selected>Subject</option>
+                                        <option value="1">Subject 1</option>
+                                        <option value="2">Subject 2</option>
+                                        <option value="3">Subject 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 search-field-col">
+                            <div class="search-field-wrapper">
+                                <i class="bi bi-clock-history search-field-icon"></i>
+                                <div class="search-field-content">
+                                    <label class="search-field-label">Deadline</label>
+                                    <select class="form-select search-select">
+                                        <option selected>Deadline</option>
+                                        <option value="1">Deadline 1</option>
+                                        <option value="2">Deadline 2</option>
+                                        <option value="3">Deadline 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 search-btn-col">
+                            <button type="submit" class="search-submit-btn">
+                                <span>Find Help</span>
+                                <i class="bi bi-arrow-right-short fs-5"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
